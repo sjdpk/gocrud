@@ -199,8 +199,7 @@
             return false
         }
         return true
-}
-    ```
+    }
 
 7. Create `routes` folder and add `routes.go` file
     `mkdir routes;touch routes.go`
