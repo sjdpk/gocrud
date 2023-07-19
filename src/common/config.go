@@ -19,7 +19,7 @@ var AppConfig *Config
 // load configuration data using viper
 func LoadAppConfig() {
 	log.Println("Loading Server Configuration")
-	viper.AddConfigPath(".")
+	viper.AddConfigPath("./src/common")
 	viper.SetConfigName("config")
 	viper.SetConfigType("json")
 	if err := viper.ReadInConfig(); err != nil {

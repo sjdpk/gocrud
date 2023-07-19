@@ -36,6 +36,8 @@
     Display Commands: You can append + to show more details.
 - \l: List all database (or \list).
 - \dt: Display all tables.
+- \d table_name : Display tabes attribute
+- \d+ table_name : Display describe tabes 
 - \di: Display all indexes.
 - \dv: Display all views.
 - \ds: Display all sequences.
