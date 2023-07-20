@@ -8,7 +8,6 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/sjdpk/gocrud/src/common"
 	"github.com/sjdpk/gocrud/src/database"
-	"github.com/sjdpk/gocrud/src/migrations"
 	"github.com/sjdpk/gocrud/src/routes"
 )
 
@@ -17,7 +16,6 @@ func main() {
 	common.LoadAppConfig()
 	// Initialize Database
 	database.Connect(common.AppConfig.DbConnectionString)
-	migrations.Migration()
 
 	// Initialize the router
 	router := mux.NewRouter().StrictSlash(true)
